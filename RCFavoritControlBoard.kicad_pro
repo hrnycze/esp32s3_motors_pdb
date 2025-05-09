@@ -139,7 +139,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.25,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -550,6 +550,12 @@
           "show": true
         },
         {
+          "group_by": false,
+          "label": "LCSC Part #",
+          "name": "LCSC Part #",
+          "show": true
+        },
+        {
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
@@ -589,7 +595,7 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -601,15 +607,15 @@
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_asc": false,
+      "sort_field": "LCSC Part #"
     },
     "connection_grid_size": 50.0,
     "drawing": {
